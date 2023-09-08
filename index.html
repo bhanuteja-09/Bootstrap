@@ -30,7 +30,7 @@
             <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
         </ul>
         <span class="navbar-text">
-            <a> 
+            <a onclick="toggleModal2()"> 
               <!-- data-toggle="modal" data-target="#loginModal" -->
                 <span class="fa fa-sign-in"></span> Login
             </a>
@@ -358,19 +358,27 @@
       modal1.toggle();
         
       // Toggle the modal again after 3 seconds
+      
       // setTimeout(() => {
       //     modal1.toggle();
       // }, 3000)
   }
 </script>
 
-
-<!-- <script>
-  $(document).ready(function() {
-$('#Reserve a Table').modal('toggle');
-$('#loginModal').modal('toggle');
-  });
-</script> -->
+<script>
+  var modal2 = new bootstrap.Modal(document.getElementById('loginModal'));
+  function toggleModal2() {
+        
+      // Toggle Modal
+      modal2.toggle();
+        
+      // Toggle the modal again after 3 seconds
+      
+      // setTimeout(() => {
+      //     modal1.toggle();
+      // }, 3000)
+  }
+</script>
 
 </body>
 
