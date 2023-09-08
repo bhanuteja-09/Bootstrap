@@ -90,7 +90,7 @@
                 <div class="col-12 col-sm col-lg-3 align-self-center"> 
                 
               <span class="navbar-text col-12 col-sm col-lg-10 align-self-center">
-                <a type="button" class="btn btn-warning btn-sm btn-block">
+                <a type="button" class="btn btn-warning btn-sm btn-block" onclick="toggleModal1()">
                   <!-- data-toggle="modal" data-target="#Reserve a Table" -->
                     Reserve Table
                 </a>
@@ -347,7 +347,31 @@
       }
     });
   });
+  
 </script>
+
+<script>
+  var modal1 = new bootstrap.Modal(document.getElementById('Reserve a Table'));
+  function toggleModal1() {
+        
+      // Toggle Modal
+      modal1.toggle();
+        
+      // Toggle the modal again after 3 seconds
+      // setTimeout(() => {
+      //     modal1.toggle();
+      // }, 3000)
+  }
+</script>
+
+
+<!-- <script>
+  $(document).ready(function() {
+$('#Reserve a Table').modal('toggle');
+$('#loginModal').modal('toggle');
+  });
+</script> -->
+
 </body>
 
 </html>
