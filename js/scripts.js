@@ -14,12 +14,26 @@ $(document).ready(function() {
     });
  
 
-  $("#loginModalToggle").click(function() {
-    $("#loginModal").modal('toggle');
-  });
+  // $("#loginModalToggle").click(function() {
+  //   $("#loginModal").modal('toggle');
+  // });
 
-  $("#reserveModalToggle").click(function() {
-    $("#reserveModal").modal('toggle');
-  });
+  // $("#reserveModalToggle").click(function() {
+  //   $("#reserveModal").modal('toggle');
+  // });
 
  });
+
+ var modal1 = new bootstrap.Modal(document.getElementById('Reserve a Table'));
+  function toggleModal1() {
+        
+     
+      modal1.toggle();
+  }
+
+  var modal2 = new bootstrap.Modal(document.getElementById('loginModal'));
+  function toggleModal2() {
+        
+     
+      modal2.toggle();
+  }
