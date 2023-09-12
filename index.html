@@ -8,10 +8,12 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
     
         <!-- Bootstrap CSS -->
+        <!-- build:css css/main.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
         <title>Ristorante Con Fusion</title>
 </head>
 
@@ -93,14 +95,14 @@
               <span class="navbar-text col-12 col-sm col-lg-10 align-self-center">
                 <a type="button" class="btn btn-warning btn-sm btn-block" onclick="toggleModal1()">
                   <!-- data-toggle="modal" data-target="#Reserve a Table" -->
-                  
+                    
                     Reserve Table
                 </a>
             </span>
           </div>
             </div>
         </div>
-    </header>
+    </header> 
 
     <div class="container">
       <div class="row row-content">
@@ -330,11 +332,12 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
-
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
 <!-- <script>
   var modal1 = new bootstrap.Modal(document.getElementById('Reserve a Table'));
@@ -343,7 +346,7 @@
      
       modal1.toggle();
   }
-  
+
 </script>
 
 <script>
