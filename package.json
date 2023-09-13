@@ -2,7 +2,6 @@
   "overrides": {
     "graceful-fs": "^4.2.11"
   },
-
   "name": "confusion",
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
@@ -19,7 +18,6 @@
     "imagemin": "imagemin img/* -o dist/img",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
-    
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +25,7 @@
     "browser-sync": "^2.23.6",
     "css": "^3.0.0",
     "cssmin": "^0.4.3",
+    "del": "^3.0.0",
     "grunt": "^1.0.2",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-clean": "^1.1.0",
@@ -40,7 +39,14 @@
     "grunt-filerev": "^2.3.1",
     "grunt-usemin": "^3.1.1",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rev": "^8.1.1",
     "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-usemin": "^0.3.29",
     "htmlmin": "^0.0.7",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.3.0",
